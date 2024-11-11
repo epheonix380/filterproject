@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+The content of the document......
+<form action="/" method="post">
+    {% csrf_token %}
+    <label for="your_file">Your file: </label>
+    <input id="file" type="file" name="file" accept="video/*,.mov,.mp4,.avi">
+    <input type="submit" value="OK">
+</form>
+</body>
+
+</html>
